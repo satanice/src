@@ -2,7 +2,7 @@
 
 spl_autoload_register(function (string $nomeCompletoDaClasse)
 {
-    $caminhoArquivo = str_replace('prj\\teste', 'src', $nomeCompletoDaClasse);
+    $caminhoArquivo = str_replace('Prj\\Teste', 'src', $nomeCompletoDaClasse);
     $caminhoArquivo = str_replace('\\', DIRECTORY_SEPARATOR, $caminhoArquivo);
     $caminhoArquivo .= ".php";
 
